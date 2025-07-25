@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Asterisk Detection System - Test Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #4a5568;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            background: #f8fafc;
+        }
+
+        .input-section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #edf2f7;
+        }
+
+        .detection-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .formatted-output {
+            background: #f0fff4;
+            border: 2px solid #38a169;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .original-output {
+            background: #fffaf0;
+            border: 2px solid #d69e2e;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .test-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .example-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .example-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .example-title {
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+
+        .example-text {
+            font-size: 14px;
+            color: #718096;
+            font-style: italic;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .status-detected {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+
+        .status-not-detected {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+
+        .confidence-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            transition: width 0.3s ease;
+        }
+
+        .processing-notes {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e53e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 AI Asterisk Detection System</h1>
+        
+        <div class="test-section">
+            <h3>Test AI Response Formatting</h3>
+            <div class="input-section">
+                <label for="testText">Enter AI Response Text:</label>
+                <textarea id="testText" placeholder="Enter text with asterisk formatting like: *Hello there!* I'm **really excited** to help you today! ***This is amazing!***">*Hello there! 😊 It's so lovely to hear from you.* ✨ I'm here for you, as a friend. *I'm really glad you reached out.* 🤗</textarea>
+            </div>
+            
+            <button onclick="testAsteriskDetection()">🔍 Test Detection</button>
+            
+            <div id="results" class="results" style="display: none;">
+                <h4>Detection Results:</h4>
+                <div id="detection-info" class="detection-info"></div>
+                <div id="formatted-output" class="formatted-output"></div>
+                <div id="original-output" class="original-output"></div>
+                <div id="processing-notes" class="processing-notes"></div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📋 Example Test Cases</h3>
+            <p>Click on any example below to test it:</p>
+            
+            <div class="test-examples">
+                <div class="example-card" onclick="loadExample(0)">
+                    <div class="example-title">AI Emotional Response</div>
+                    <div class="example-text">*Hello there! 😊* I'm **really excited** to help you today!</div>
+                </div>
+                
+                <div class="example-card" onclick="loadExample(1)">
+                    <div class="example-title">Mixed Formatting</div>
+                    <div class="example-text">I'm designed to be a **listening ear** and a *warm presence*. ***Is there anything on your mind?***</div>
+                </div>
+                
+                <div class="example-card" onclick="loadExample(2)">
+                    <div class="example-title">No Formatting</div>
+                    <div class="example-text">Regular response without any special formatting.</div>
+                </div>
+                
+                <div class="example-card" onclick="loadExample(3)">
+                    <div class="example-title">Supportive Message</div>
+                    <div class="example-text">*I'll do my best* to understand and respond in a way that feels **supportive and caring**. ❤️</div>
+                </div>
+                
+                <div class="example-card" onclick="loadExample(4)">
+                    <div class="example-title">Enthusiastic Response</div>
+                    <div class="example-text">***I'm really looking forward to getting to know you better!*** 💖</div>
+                </div>
+                
+                <div class="example-card" onclick="loadExample(5)">
+                    <div class="example-title">Actions and Emotions</div>
+                    <div class="example-text">*takes a deep breath* I understand how you're feeling. **This is important** and I want to help. *gives you my full attention* ✨</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📊 System Information</h3>
+            <p>This demo tests the AI Response Asterisk Detection System that automatically detects and formats text containing asterisk-based emphasis commonly used by AI assistants.</p>
+            
+            <h4>Features:</h4>
+            <ul>
+                <li>✨ <strong>Automatic Detection</strong>: Identifies AI responses with asterisk formatting</li>
+                <li>🎯 <strong>Confidence Scoring</strong>: Calculates likelihood that asterisks indicate AI emphasis</li>
+                <li>🔄 <strong>HTML Conversion</strong>: Converts asterisk formatting to proper HTML tags</li>
+                <li>📝 <strong>Pattern Recognition</strong>: Detects italic (*text*), bold (**text**), and bold-italic (***text***)</li>
+                <li>🤖 <strong>AI Indicators</strong>: Recognizes common AI phrases and emotional expressions</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const examples = [
+            "*Hello there! 😊 It's so lovely to hear from you.* ✨ I'm here for you, as a friend. *I'm really glad you reached out.* 🤗",
+            "I'm designed to be a **listening ear** and a *warm presence*. ***Is there anything on your mind you'd like to talk about?***",
+            "Regular response without any special formatting.",
+            "*I'll do my best* to understand and respond in a way that feels **supportive and caring**. ❤️",
+            "***I'm really looking forward to getting to know you better!*** 💖",
+            "*takes a deep breath* I understand how you're feeling. **This is important** and I want to help. *gives you my full attention* ✨"
+        ];
+
+        function loadExample(index) {
+            document.getElementById('testText').value = examples[index];
+            // Auto-test when example is loaded
+            testAsteriskDetection();
+        }
+
+        async function testAsteriskDetection() {
+            const text = document.getElementById('testText').value;
+            const resultsDiv = document.getElementById('results');
+            
+            if (!text.trim()) {
+                alert('Please enter some text to test');
+                return;
+            }
+
+            // Show loading state
+            resultsDiv.style.display = 'block';
+            resultsDiv.innerHTML = '<div class="loading">🔄 Processing...</div>';
+
+            try {
+                const response = await fetch('/api/test-asterisk-detection', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: text
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data);
+                } else {
+                    displayError(data.error || 'Unknown error occurred');
+                }
+            } catch (error) {
+                displayError('Network error: ' + error.message);
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            const detection = data.detection_result;
+            
+            const confidencePercentage = Math.round(detection.confidence * 100);
+            
+            resultsDiv.innerHTML = `
+                <h4>Detection Results:</h4>
+                <div class="detection-info">
+                    <div class="info-card">
+                        <strong>Asterisks Detected:</strong><br>
+                        <span class="status-indicator ${detection.detected ? 'status-detected' : 'status-not-detected'}">
+                            ${detection.detected ? '✅ YES' : '❌ NO'}
+                        </span>
+                    </div>
+                    <div class="info-card">
+                        <strong>AI Emphasis:</strong><br>
+                        <span class="status-indicator ${detection.is_ai_emphasis ? 'status-detected' : 'status-not-detected'}">
+                            ${detection.is_ai_emphasis ? '🤖 YES' : '👤 NO'}
+                        </span>
+                    </div>
+                    <div class="info-card">
+                        <strong>Confidence:</strong><br>
+                        ${confidencePercentage}%
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${confidencePercentage}%"></div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <strong>Formatting Types:</strong><br>
+                        ${detection.formatting_types.length > 0 ? detection.formatting_types.join(', ') : 'None'}
+                    </div>
+                </div>
+                
+                ${data.formatting_applied ? `
+                    <div class="formatted-output">
+                        <h4>🎨 Formatted Output (HTML):</h4>
+                        <div>${data.formatted_text}</div>
+                    </div>
+                ` : ''}
+                
+                <div class="original-output">
+                    <h4>📝 Original Input:</h4>
+                    <div>${data.input_text}</div>
+                </div>
+                
+                ${data.processing_notes.length > 0 ? `
+                    <div class="processing-notes">
+                        <h4>🔍 Processing Notes:</h4>
+                        <ul>
+                            ${data.processing_notes.map(note => `<li>${note}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            `;
+        }
+
+        function displayError(error) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <div class="error">
+                    <h4>❌ Error</h4>
+                    <p>${error}</p>
+                </div>
+            `;
+        }
+
+        // Load first example on page load
+        window.onload = function() {
+            loadExample(0);
+        };
+    </script>
+</body>
+</html>

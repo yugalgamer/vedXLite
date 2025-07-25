@@ -1,0 +1,5 @@
+
+# Add to your environment or config:
+export GEMMA_MODEL_NAME='gemma:2b'
+export GEMMA_TIMEOUT=60
+export GEMMA_MAX_RETRIES=2
