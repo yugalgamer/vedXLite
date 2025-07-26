@@ -3,7 +3,8 @@
 **A sophisticated, multi-modal AI assistant designed for accessibility, empathy, and intelligent interaction**
 
 ![Project Banner](https://img.shields.io/badge/AI%20Assistant-Multi%20Modal-blue) ![Python](https://img.shields.io/badge/Python-3.8%2B-green) ![CUDA](https://img.shields.io/badge/CUDA-Accelerated-orange) ![Accessibility](https://img.shields.io/badge/Accessibility-First-purple)
-[Technical Writeup](technical_writeup.md).
+
+**[Technical Writeup](technical_writeup.md).**
 
 ## ✨ Key Features
 
