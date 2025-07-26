@@ -4,7 +4,7 @@
 
 ![Project Banner](https://img.shields.io/badge/AI%20Assistant-Multi%20Modal-blue) ![Python](https://img.shields.io/badge/Python-3.8%2B-green) ![CUDA](https://img.shields.io/badge/CUDA-Accelerated-orange) ![Accessibility](https://img.shields.io/badge/Accessibility-First-purple)
 
-**[Technical Writeup](technical_writeup.md).**
+
 
 ## ✨ Key Features
 
@@ -31,6 +31,11 @@
 - **Offline Capabilities**: VediX offline assistant for privacy
 - **Local Processing**: Optional offline mode for sensitive interactions
 - **Data Protection**: Comprehensive input validation and secure handling
+
+## Tech Stack
+Check out the **[Tech Stack](technical_writeup.md#tech-stack)** used in this project.
+
+
 
 ## Prerequisites
 
