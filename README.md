@@ -33,7 +33,7 @@
 - **Data Protection**: Comprehensive input validation and secure handling
 
 ## Tech Stack
-Check out the **[Tech Stack](technical_writeup.md#tech-stack)** used in this project.
+Check out the **[Tech Stack](TECHNICAL_WRITEUP.md)** used in this project.
 
 
 
