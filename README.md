@@ -93,8 +93,9 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
    # or for improved performance:
    ollama pull gemma3n:e2b
    ```
-4. **CUDA Toolkit** (Optional): Enables GPU acceleration.
-5. **Vosk Model** for offline voice processing.
+4. **CUDA Toolkit** (Optional): Enables GPU acceleration. Install with: ```base pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 ```
+   
+6. **Vosk Model** for offline voice processing.
 
 ### **Installation Steps**
 1. **Clone the Project**
