@@ -11,12 +11,52 @@ import base64
 import json
 from datetime import datetime
 import logging
+from ai_modules.gemma_integration.prompt_builder import GemmaPromptBuilder
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
+
+# Initialize prompt builder
+prompt_builder = GemmaPromptBuilder()
+
+def is_greeting(text):
+    """Detect if the text is a greeting"""
+    greeting_words = ['hello', 'hi', 'hey', 'hii', 'greetings', 'good morning', 'good afternoon', 'good evening']
+    text_lower = text.lower().strip()
+    return any(greeting in text_lower for greeting in greeting_words)
+
+def generate_greeting_response(user_prompt, username):
+    """Generate a varied greeting response using prompt system"""
+    try:
+        # Build prompt for greeting response
+        greeting_prompt = prompt_builder.build_prompt(
+            scene_description=f"User {username} just greeted with: '{user_prompt}'",
+            user_question="Respond with a brief, friendly greeting",
+            template_type="greeting_response",
+            additional_context={"Username": username}
+        )
+        
+        # In a real implementation, this would be sent to your AI model
+        # For now, return the prompt that would generate varied responses
+        logger.info(f"Generated greeting prompt for AI: {greeting_prompt[:100]}...")
+        
+        # Simulate AI response with variety (replace with actual AI call)
+        import random
+        sample_responses = [
+            f"Hi {username}! How can I assist you today?",
+            f"Hello {username}! Good to hear from you.",
+            f"Hey {username}, what's on your mind?",
+            f"Hi there, {username}! How are things going?",
+            f"Hello {username}! What can I help you with?"
+        ]
+        return random.choice(sample_responses)
+        
+    except Exception as e:
+        logger.error(f"Error generating greeting response: {e}")
+        return f"Hello {username}! How can I help you today?"
 
 # Simple in-memory storage (replace with database in production)
 chat_history = []
@@ -59,9 +99,10 @@ def chat():
             'prompt': prompt
         })
         
-        # Simple AI response (replace with actual AI integration)
-        if 'hello' in prompt.lower():
-            response = f"Hello {username}! How can I help you today?"
+        # Intelligent response routing
+        if is_greeting(prompt):
+            # Use prompt-based greeting system
+            response = generate_greeting_response(prompt, username)
         elif 'how are you' in prompt.lower():
             response = "I'm doing great, thank you for asking! How are you feeling today?"
         elif 'weather' in prompt.lower():

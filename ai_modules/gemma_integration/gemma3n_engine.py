@@ -14,10 +14,17 @@ from threading import Lock
 # Import CUDA support
 try:
     from ..cuda_core import get_cuda_manager, cuda_available
-    from ..cuda_text import get_cuda_text_processor
     CUDA_SUPPORT_AVAILABLE = True
 except ImportError:
     CUDA_SUPPORT_AVAILABLE = False
+
+# Import CUDA text processor separately
+try:
+    from ..cuda_text import get_cuda_text_processor
+    CUDA_TEXT_AVAILABLE = True
+except ImportError:
+    CUDA_TEXT_AVAILABLE = False
+    get_cuda_text_processor = None
 
 logger = logging.getLogger(__name__)
 
@@ -28,10 +35,10 @@ class Gemma3nEngine:
     """
     
     def __init__(self, 
-                 model_name: str = "gemma:2b",  # Use faster model by default
+                 model_name: str = "gemma3n:latest",  # Use enhanced model by default
                  ollama_url: str = "http://localhost:11434",
-                 max_retries: int = 2,
-                 timeout: int = 60,
+                 max_retries: int = 3,
+                 timeout: int = 120,  # Increased timeout for large models
                  enable_cuda: bool = True):
         """
         Initialize the Gemma3n engine.
@@ -56,8 +63,11 @@ class Gemma3nEngine:
         if self.enable_cuda:
             try:
                 self.cuda_manager = get_cuda_manager()
-                self.cuda_text_processor = get_cuda_text_processor()
-                logger.info(f"✅ CUDA acceleration enabled for Gemma3n engine")
+                if CUDA_TEXT_AVAILABLE and get_cuda_text_processor:
+                    self.cuda_text_processor = get_cuda_text_processor()
+                    logger.info(f"✅ CUDA acceleration with text processing enabled for Gemma3n engine")
+                else:
+                    logger.info(f"✅ CUDA acceleration enabled for Gemma3n engine (text processing unavailable)")
             except Exception as e:
                 logger.warning(f"⚠️  CUDA initialization failed: {e}")
                 self.enable_cuda = False

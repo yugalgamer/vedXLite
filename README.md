@@ -1,6 +1,5 @@
 # 🤖 VedXlite - Advanced Multi-Modal AI Assistant
-
-**A sophisticated, accessibility-focused AI assistant with advanced chat, voice, and vision capabilities powered by Gemma3n, CUDA acceleration, and offline processing.**
+**An accessibility-focused AI assistant with advanced chat, voice, and vision capabilities powered by Gemma3n, CUDA acceleration, and offline processing.**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Flask](https://img.shields.io/badge/Flask-2.3%2B-green) ![CUDA](https://img.shields.io/badge/CUDA-Accelerated-orange) ![Accessibility](https://img.shields.io/badge/Accessibility-First-purple) ![Ollama](https://img.shields.io/badge/Ollama-Powered-red)
 
@@ -17,7 +16,7 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
 ### 💬 **Advanced Chat System**
 - **Multi-Modal Conversations**: Text, voice, and image inputs
 - **Role-Based Personalities**: Best Friend, Motivator, Guide, Female Friend
-- **Session Memory**: Maintains context within current session only
+- **Session Memory**: Maintains context within the current session only and includes structured prompt-based responses for greetings
 - **Markdown Formatting**: Enhanced responses with *italic*, **bold**, and ***bold italic*** formatting
 - **Heart-to-Heart Connection**: Emotional intelligence and empathetic responses
 - **VedXlite Mode**: Specialized support for introverts and shy individuals
@@ -29,6 +28,8 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
 - **Continuous Listening**: Passive voice activation with visual feedback
 - **Voice Settings Toggle**: User-controlled voice enable/disable
 - **Multiple Voice Modes**: 
+  - Enhanced voice interactions with prompt-based dynamic greeting responses
+  - Improved conversational flow using AI-driven prompt systems
   - Standard voice chat with role-based personalities
   - VedXlite voice mode for introverted users
   - VediX offline assistant mode
@@ -58,121 +59,91 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
 
 ---
 
-## **TECHNICAL WRJTEUP**
-
-**[TechWriteup](TECHNICAL_WRITEUP.md)**
-
 ## 🏗️ Architecture & Technology Stack
 
 ### **Backend Components**
-- **Flask Application** (`main.py`): Core server with comprehensive endpoint management
-- **Gemma Integration** (`gemma.py`): Ollama-powered language model interface
-- **Enhanced AI Modules** (`ai_modules/`):
-  - `gemma_integration/`: Advanced reasoning and prompt building
-  - `cuda_core/`: GPU acceleration and memory management
-  - `cuda_text/`: CUDA-accelerated text processing
-  - `vision_cuda/`: GPU-accelerated computer vision
-- **VediX Core** (`vedix_core.py`): Offline AI assistant with Vosk integration
-- **User Profile System**: Persistent user preferences and role management
+- **Flask Application**: Core server and API logic.
+- **Gemma Integration**: Interfaces with language models using Ollama.
+- **AI Modules**:
+  - Reasoning and prompt systems.
+  - Core GPU acceleration and vision processing.
+  - User profile handling and persistent storage.
 
 ### **Frontend Components**
-- **Modern Web Interface** (`index.html`): Responsive, accessible design
-- **Modular JavaScript Architecture**:
-  - `main.js`: Application initialization and module loading
-  - `feature_voice.js`: Voice recognition and interaction system
-  - `enhanced_vision.js`: Vision processing interface
-  - `voice_visualizer.js`: Real-time audio visualization
-  - `advanced_memory.js`: Session memory management
-  - `request_queue.js`: API request management
-  - `voice_settings.js`: Voice control and preferences
+- **Dynamic Web Interface**: Responsive design with advanced JS integration.
 
 ### **AI Processing Pipeline**
-1. **Input Processing**: Text/Voice/Image preprocessing with CUDA acceleration
-2. **Context Building**: Session-aware context construction
-3. **AI Inference**: Gemma3n model processing via Ollama
-4. **Response Enhancement**: Markdown formatting and accessibility optimization
-5. **Output Delivery**: Multi-modal response delivery (text/voice/visual)
+1. **Input Handling**: Text, Voice, Image input processed with CUDA.
+2. **Context Management**: Context-aware response generation.
+3. **Inference & Interaction**: AI-driven query handling using Gemma3n.
+4. **Output & Delivery**: Interface for multi-modal responses (text/voice/visual).
 
 ---
 
 ## 🛠️ Installation & Setup
-
 ### **Prerequisites**
 1. **Python 3.8+** with pip
 2. **Ollama** - Install from [ollama.ai](https://ollama.ai/)
 3. **Gemma Model**: 
    ```bash
    ollama pull gemma3n:latest
-   # or for faster performance:
+   # or for improved performance:
    ollama pull gemma:2b
    ```
-4. **CUDA Toolkit** (Optional): For GPU acceleration
-5. **Vosk Model** (Optional): For offline voice recognition
+4. **CUDA Toolkit** (Optional): Enables GPU acceleration.
+5. **Vosk Model** for offline voice processing.
 
 ### **Installation Steps**
-
-1. **Clone/Download the Project**
+1. **Clone the Project**
    ```bash
    git clone <repository-url>
    cd VedXlite
    ```
-
-2. **Install Python Dependencies**
+2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
-
-3. **Download Vosk Model** (Optional for offline voice)
+3. **Vosk Model Setup**
    ```bash
-   # Download and extract to model/ directory
    wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
    unzip vosk-model-small-en-us-0.15.zip -d model/
    ```
-
 4. **Start Ollama Service**
    ```bash
    ollama serve
    ```
-
-5. **Launch VedXlite**
+5. **Launch Application**
    ```bash
    python main.py
    ```
-
-6. **Access the Interface**
-   - Open browser to `http://localhost:5000`
-   - Complete initial user setup (name and relationship preference)
+6. **User Interface Access**
+   - Open browser: `http://localhost:5000`
+   - Complete initial setup.
 
 ---
 
 ## 🎯 Usage Guide
 
 ### **Chat Interface**
-1. **Text Chat**: Type messages in the main chat area
-2. **Image Chat**: Click image icon to attach photos for analysis
-3. **Role Selection**: Choose your preferred AI personality
-4. **Memory Management**: Use "clear chat" commands to reset session
+- **Text Entry**: Type messages and send.
+- **Image Upload**: Attach photos for analysis.
+- **Select Role**: Adjust AI personality.
+- **Session Clear**: Commands to reset interactions.
 
 ### **Voice Features**
-1. **Enable Voice**: Click the voice toggle in the header
-2. **Start Listening**: Click "Start Voice" in the Voice Interact tab
-3. **Speak Naturally**: The system will continuously listen and respond
-4. **Visual Feedback**: Watch the audio visualizer for activity indication
+- **Voice Activation**: Enable in header.
+- **Real-Time Listening**: Continuous listening.
+- **Audio Visualization**: See microphone input activity.
 
 ### **Vision Analysis**
-1. **Upload Image**: Drag & drop or click to select images
-2. **Ask Questions**: Add specific questions about the image
-3. **Enhanced Mode**: Toggle Gemma3n reasoning for detailed analysis
-4. **Quick Actions**: Use speak, copy, or re-analyze buttons
+- **Upload and Analyze**: Use images for AI-driven analysis.
+- **Detailed Queries**: Ask questions about images.
 
 ### **Accessibility Features**
-- **Screen Reader Compatible**: Full ARIA support
-- **High Contrast Mode**: Available in settings
-- **Voice-Optimized Responses**: Specially formatted for speech synthesis
-- **Safety-First Descriptions**: Focus on navigation and hazard identification
+- **Screen Reader**: Compatible interface.
+- **High Contrast**: Interface settings for visibility.
 
----
-
+### 🔌 API Endpoints
 ## 🔌 API Endpoints
 
 ### **Chat & Communication**

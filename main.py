@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, session, send_from_d
 import os
 import uuid
 import sys
+from gemma import GemmaVisionAssistant
 import traceback
 from datetime import datetime
 from werkzeug.utils import secure_filename
@@ -11,14 +12,23 @@ import threading
 import time
 import json
 
-# Configure comprehensive logging
+# Configure comprehensive logging with Unicode support
+import io
+
+# Create a UTF-8 encoded stream handler for console output
+console_handler = logging.StreamHandler(io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace'))
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+
+# Create a UTF-8 encoded file handler
+file_handler = logging.FileHandler('app.log', encoding='utf-8')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+
+# Configure root logger
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('app.log'),
-        logging.StreamHandler(sys.stdout)
-    ]
+    handlers=[file_handler, console_handler]
 )
 logger = logging.getLogger(__name__)
 
@@ -27,9 +37,16 @@ try:
     from gemma import analyze_image, chat, chat_vedx_lite, chat_vedx_lite_with_image, check_connection, get_available_models
     logger.info("✅ Gemma AI integration loaded successfully")
     GEMMA_AVAILABLE = True
+    
+    # Store model choice and assistant globally (will be initialized later in Flask context)
+    MODEL_CHOICE = None
+    GLOBAL_ASSISTANT = None
+    
 except ImportError as e:
     logger.error(f"❌ Gemma AI integration not available: {e}")
     GEMMA_AVAILABLE = False
+    MODEL_CHOICE = None
+    GLOBAL_ASSISTANT = None
 
 # VediX offline assistant
 try:
@@ -130,6 +147,137 @@ except ImportError as e:
     logger.warning(f"⚠️  AI Response Formatter not available: {e}")
     AI_FORMATTER_AVAILABLE = False
     ai_formatter = None
+
+# ===== MODEL INITIALIZATION =====
+def check_and_pull_model(model_name):
+    """Check if model exists and pull it if not available"""
+    import subprocess
+    
+    try:
+        logger.info(f"🔍 Checking if model {model_name} is available...")
+        
+        # Check if model exists
+        result = subprocess.run(['ollama', 'list'], capture_output=True, text=True, timeout=30)
+        
+        if result.returncode == 0:
+            models = result.stdout
+            if model_name in models:
+                logger.info(f"✅ Model {model_name} is already available")
+                return True
+            else:
+                logger.info(f"📼 Model {model_name} not found. Downloading...")
+                print(f"\n📬 Downloading {model_name}... This may take a few minutes.")
+                
+                # Pull the model
+                pull_result = subprocess.run(['ollama', 'pull', model_name], 
+                                           capture_output=False, text=True, timeout=1800)  # 30 min timeout
+                
+                if pull_result.returncode == 0:
+                    logger.info(f"✅ Successfully downloaded {model_name}")
+                    print(f"✅ {model_name} downloaded successfully!")
+                    return True
+                else:
+                    logger.error(f"❌ Failed to download {model_name}")
+                    print(f"❌ Failed to download {model_name}")
+                    return False
+        else:
+            logger.warning("⚠️ Ollama CLI not available or not responding")
+            return False
+            
+    except subprocess.TimeoutExpired:
+        logger.error(f"❌ Timeout while downloading {model_name}")
+        print(f"❌ Download timeout for {model_name}")
+        return False
+    except Exception as e:
+        logger.error(f"❌ Error checking/pulling model {model_name}: {e}")
+        return False
+
+def initialize_model_choice():
+    """Initialize Ollama model choice and assistant - called after Flask app starts"""
+    global MODEL_CHOICE, GLOBAL_ASSISTANT
+    
+    if not GEMMA_AVAILABLE:
+        logger.warning("⚠️ Gemma AI not available - skipping model initialization")
+        return
+    
+    try:
+        # Only ask for model choice if not already set
+        if MODEL_CHOICE is None:
+            print("\n🤖 Ollama Gemma3n Model Selection:")
+            print("💻 Choose the model based on your PC specifications:")
+            print("")
+            print("1. gemma3n:e4b - High-End PC Model")
+            print("   • 💪 Requires: 16GB+ RAM, High-end GPU")
+            print("   • 🎆 Best performance and accuracy")
+            print("   • ⚡ Larger model size (~8-10GB)")
+            print("")
+            print("2. gemma3n:e2b - Medium-Spec PC Model")
+            print("   • 💻 Requires: 8GB+ RAM, Mid-range GPU")
+            print("   • ⚙️ Good performance, faster inference")
+            print("   • 📦 Smaller model size (~4-6GB)")
+            print("")
+            
+            while True:
+                try:
+                    choice = input("🤖 Choose your model (1 for e4b, 2 for e2b): ").strip()
+                    if choice in ['1', '2']:
+                        MODEL_CHOICE = choice
+                        break
+                    else:
+                        print("⚠️ Please enter 1 or 2")
+                except KeyboardInterrupt:
+                    print("\n⚠️ Model selection cancelled - using default medium-spec model")
+                    MODEL_CHOICE = '2'
+                    break
+        
+        # Determine the model name based on choice
+        if MODEL_CHOICE == "1":
+            selected_model = "gemma3n:e4b"
+            model_desc = "High-End PC Model (e4b)"
+        else:
+            selected_model = "gemma3n:e2b"
+            model_desc = "Medium-Spec PC Model (e2b)"
+        
+        logger.info(f"🎯 Selected model: {selected_model}")
+        print(f"\n🎯 Selected: {model_desc}")
+        
+        # Check and download model if needed
+        if not check_and_pull_model(selected_model):
+            print(f"\n⚠️ Failed to download {selected_model}. Trying fallback...")
+            
+            # Try the other model as fallback
+            fallback_model = "gemma3n:e2b" if MODEL_CHOICE == "1" else "gemma3n:e4b"
+            logger.info(f"🔄 Attempting fallback to {fallback_model}")
+            
+            if check_and_pull_model(fallback_model):
+                selected_model = fallback_model
+                print(f"✅ Using fallback model: {fallback_model}")
+            else:
+                # Final fallback to basic gemma3n
+                selected_model = "gemma3n:latest"
+                logger.warning(f"🔄 Using basic fallback: {selected_model}")
+                print(f"⚠️ Using basic fallback model: {selected_model}")
+        
+        # Initialize the assistant with the selected model
+        if GLOBAL_ASSISTANT is None:
+            logger.info(f"🦙 Initializing Ollama model ({selected_model})...")
+            GLOBAL_ASSISTANT = GemmaVisionAssistant(model_name=selected_model)
+            logger.info(f"✅ Ollama model {selected_model} loaded successfully")
+            print(f"✅ Model {selected_model} is ready!")
+        
+        logger.info(f"🎯 Active Model: Ollama {selected_model}")
+        
+    except Exception as e:
+        logger.error(f"❌ Model initialization failed: {e}")
+        # Final fallback
+        try:
+            selected_model = "gemma3n:latest"
+            GLOBAL_ASSISTANT = GemmaVisionAssistant(model_name=selected_model)
+            logger.info(f"✅ Emergency fallback: Using {selected_model}")
+            print(f"⚠️ Emergency fallback: Using {selected_model}")
+        except Exception as fallback_error:
+            logger.error(f"❌ Even fallback failed: {fallback_error}")
+            print(f"❌ Model initialization completely failed: {fallback_error}")
 
 # ===== COMPREHENSIVE SYSTEM INITIALIZATION =====
 def initialize_comprehensive_system():
@@ -333,6 +481,8 @@ def generate_memory_constraint_prompt(username, role):
 - Ask ***open-ended questions*** that encourage deeper sharing
 - Share appropriate *personal insights* to create mutual understanding
 - Be ***authentic and genuine*** in your responses
+- **Avoid repeating the same information or sentiments in different ways** - be concise and clear
+- Don't use ***redundant phrases*** or restate the same point multiple times
 
 **🎨 MARKDOWN FORMATTING REQUIREMENTS:**
 - **ALWAYS** use asterisk formatting in responses: *italic*, **bold**, ***bold italic***
@@ -1373,6 +1523,9 @@ def vosk_transcribe():
 if __name__ == '__main__':
     print("🚀 Starting Comprehensive AI Assistant...")
     print("📍 Open http://localhost:5000 in your browser")
+    
+    # Initialize model choice first
+    initialize_model_choice()
     
     # Initialize comprehensive system
     print("\n🔧 Initializing Comprehensive AI System...")

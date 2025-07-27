@@ -21,7 +21,7 @@ class GemmaReasoningLayer:
     """
     
     def __init__(self, 
-                 model_name: str = "gemma:2b",  # Use faster model by default
+                 model_name: str = "gemma3n:latest",  # Use enhanced model by default
                  enable_gemma: bool = True,
                  log_interactions: bool = True):
         """

@@ -18,14 +18,14 @@ class AIModulesConfig:
     def __init__(self):
         # Gemma3n Integration Settings
         self.ENABLE_GEMMA = self._get_bool_env('ENABLE_GEMMA', True)
-        self.GEMMA_MODEL_NAME = os.getenv('GEMMA_MODEL_NAME', 'gemma:2b')  # Use faster model by default
+        self.GEMMA_MODEL_NAME = os.getenv('GEMMA_MODEL_NAME', 'gemma3n:latest')  # Use enhanced model by default
         self.GEMMA_OLLAMA_URL = os.getenv('GEMMA_OLLAMA_URL', 'http://localhost:11434')
         self.GEMMA_MAX_RETRIES = int(os.getenv('GEMMA_MAX_RETRIES', '2'))
         self.GEMMA_TIMEOUT = int(os.getenv('GEMMA_TIMEOUT', '60'))  # Increased timeout
         
         # Performance options
         self.USE_LIGHTWEIGHT_MODEL = self._get_bool_env('USE_LIGHTWEIGHT_MODEL', False)
-        self.LIGHTWEIGHT_MODEL_NAME = os.getenv('LIGHTWEIGHT_MODEL_NAME', 'gemma:2b')
+        self.LIGHTWEIGHT_MODEL_NAME = os.getenv('LIGHTWEIGHT_MODEL_NAME', 'gemma3n:latest')
         
         # Logging and Debugging
         self.LOG_INTERACTIONS = self._get_bool_env('LOG_INTERACTIONS', True)

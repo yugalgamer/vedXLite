@@ -597,3 +597,788 @@
 2025-07-25 18:53:14,008 - werkzeug - INFO - 127.0.0.1 - - [25/Jul/2025 18:53:14] "GET /api/status HTTP/1.1" 200 -
 2025-07-25 18:53:29,411 - werkzeug - INFO - 127.0.0.1 - - [25/Jul/2025 18:53:29] "POST /api/voice-interact HTTP/1.1" 200 -
 2025-07-25 18:56:47,043 - werkzeug - INFO - 127.0.0.1 - - [25/Jul/2025 18:56:47] "POST /api/voice-interact HTTP/1.1" 200 -
+2025-07-26 17:23:35,476 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:23:39,530 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 17:23:39,530 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 17:23:39,532 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 17:23:50,181 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:23:54,302 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 17:23:54,308 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 17:23:55,582 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:55] "GET / HTTP/1.1" 200 -
+2025-07-26 17:23:55,599 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 17:23:55,682 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:55] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 17:23:55,998 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:55] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 17:23:55,999 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:55] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,029 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,263 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,309 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,341 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 17:23:56,649 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 17:23:56,666 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:23:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:24:00,737 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:24:00] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:24:04,730 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:24:04] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:44:15,464 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:44:19,609 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 17:44:19,609 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 17:44:19,610 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 17:44:29,847 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:44:33,971 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 17:44:33,974 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 17:44:34,600 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:34] "GET / HTTP/1.1" 200 -
+2025-07-26 17:44:34,613 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 17:44:34,614 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:34] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 17:44:34,915 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:34] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 17:44:34,916 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:34] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,069 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,240 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,241 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,243 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,244 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 17:44:35,564 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 17:44:35,579 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:44:39,659 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:39] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:44:43,775 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:44:43] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:45:22,147 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "GET / HTTP/1.1" 200 -
+2025-07-26 17:45:22,453 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,468 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,470 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,471 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,768 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,782 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,785 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,786 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:22,787 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:22] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-26 17:45:23,110 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:45:27,211 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:27] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:45:31,259 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:45:31] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:47:56,412 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000282971347F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:47:56,412 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000282971347F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:47:56,414 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:47:56] "POST /api/chat HTTP/1.1" 200 -
+2025-07-26 17:48:06,187 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,498 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,502 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,504 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,508 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,822 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,823 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,828 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,829 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:06,830 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:06] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-26 17:48:07,155 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:48:11,226 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:11] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:48:11,509 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-26 17:48:11,509 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:48:12,742 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028290850A60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:48:12,742 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028290850A60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:48:12,743 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:12] "POST /api/chat HTTP/1.1" 200 -
+2025-07-26 17:48:15,347 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:48:15] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:48:59,610 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:49:03,742 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 17:49:03,742 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 17:49:03,743 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 17:49:13,913 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:49:18,021 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 17:49:18,023 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 17:49:18,292 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET / HTTP/1.1" 200 -
+2025-07-26 17:49:18,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 17:49:18,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,619 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,619 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,695 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,929 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,929 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,930 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 17:49:18,931 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:18] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 17:49:19,254 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 17:49:19,269 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:49:23,354 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:23] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:49:23,714 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:49:23,718 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-26 17:49:26,233 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C41AC48610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:49:26,233 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C41AC48610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:49:26,235 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:26] "POST /api/chat HTTP/1.1" 200 -
+2025-07-26 17:49:27,459 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:49:27] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:52:16,679 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 17:52:16,692 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 17:52:22,863 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 17:52:22,864 - __main__ - WARNING - ⚠️  CUDA Support not available: No module named 'sentence_transformers'
+2025-07-26 17:52:22,864 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 17:52:22,864 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 17:52:22,865 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 17:52:23,260 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 17:52:27,381 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F58EC08760>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:52:27,381 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 17:52:27,381 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:52:27,381 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 17:52:27,381 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 17:52:27,382 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 17:52:27,382 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 17:52:27,382 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 17:52:27,382 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 17:52:31,529 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 17:52:31,530 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 17:52:31,530 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 17:52:31,704 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 17:52:31,715 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 17:52:37,157 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 17:52:37,158 - __main__ - WARNING - ⚠️  CUDA Support not available: No module named 'sentence_transformers'
+2025-07-26 17:52:37,158 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 17:52:37,159 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 17:52:37,160 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 17:52:37,529 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 17:52:41,648 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A9B658700>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 17:52:41,648 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 17:52:41,649 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 17:52:41,649 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 17:52:41,649 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 17:52:41,649 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 17:52:41,649 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 17:52:41,650 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 17:52:41,650 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 17:52:45,778 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 17:52:45,779 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 17:53:41,927 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:41] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-26 17:53:41,946 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,157 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,251 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,252 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,253 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,359 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,576 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,576 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,579 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-26 17:53:42,579 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-26 17:53:42,908 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 17:53:42,910 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:53:44,969 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:44] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:53:47,045 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:53:47] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:54:48,275 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 17:54:48,276 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 17:54:48,279 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:48] "POST /api/chat HTTP/1.1" 200 -
+2025-07-26 17:54:56,785 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:56] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-26 17:54:56,803 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-26 17:54:57,047 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,109 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,111 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,114 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,374 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,436 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,440 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,442 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,442 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-26 17:54:57,761 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 17:54:57,764 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:54:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 17:55:01,864 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:55:01] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 17:56:07,737 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 17:56:07,738 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 17:56:07,741 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 17:56:07] "POST /api/chat HTTP/1.1" 200 -
+2025-07-26 18:03:44,904 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:03:44,920 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:03:53,048 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:03:53,048 - __main__ - WARNING - ⚠️  CUDA Support not available: No module named 'sentence_transformers'
+2025-07-26 18:03:53,049 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:03:53,049 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:03:53,050 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:03:53,423 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:03:55,498 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-26 18:03:55,498 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:03:55,499 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:03:55,499 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 18:03:55,499 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:03:55,499 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:03:55,499 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:03:55,500 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:03:55,500 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:03:59,678 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 18:03:59,678 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 18:03:59,679 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 18:03:59,849 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:03:59,860 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:04:05,306 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:04:05,306 - __main__ - WARNING - ⚠️  CUDA Support not available: No module named 'sentence_transformers'
+2025-07-26 18:04:05,307 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:04:05,307 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:04:05,308 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:04:05,665 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:04:07,741 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-26 18:04:07,741 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:04:07,741 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:04:07,741 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 18:04:07,741 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:04:07,741 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:04:07,741 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:04:07,743 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:04:07,743 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:04:11,878 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 18:04:11,880 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 18:04:13,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET / HTTP/1.1" 200 -
+2025-07-26 18:04:13,326 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 18:04:13,326 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,327 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,328 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,572 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,575 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,578 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,580 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,583 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 18:04:13,596 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 18:04:13,779 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 18:04:15,638 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:15] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 18:04:17,722 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:04:17] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 18:04:37,840 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bindu\\Desktop\\Competation\\google\\main.py', reloading
+2025-07-26 18:04:39,184 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 18:04:39,376 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:04:39,387 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:04:45,397 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:04:45,398 - __main__ - WARNING - ⚠️  CUDA Support not available: No module named 'sentence_transformers'
+2025-07-26 18:04:45,398 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:04:45,399 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:04:45,399 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:04:45,772 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:04:47,845 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-26 18:04:47,846 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:04:47,846 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:04:47,846 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 18:04:47,846 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:04:47,847 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:04:47,847 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:04:47,847 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:04:47,847 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:04:52,000 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 18:04:52,003 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 18:27:33,892 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:27:33,937 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:27:49,944 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:27:49,950 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:27:49,951 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:27:49,951 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:27:49,952 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:27:49,952 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:27:49,952 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:27:49,954 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:27:50,628 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:27:50,629 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:27:50,629 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized on cuda:0
+2025-07-26 18:27:50,629 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-26 18:27:50,642 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load embeddings model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like sentence-transformers/all-MiniLM-L6-v2 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:27:50,643 - ai_modules.cuda_text.cuda_text_processor - ERROR - ❌ Failed to create fallback model: 'CudaTextProcessor' object has no attribute '_create_simple_embedding_model'
+2025-07-26 18:27:50,650 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load sentiment model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like cardiffnlp/twitter-roberta-base-sentiment-latest is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:27:50,655 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load summarization model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like facebook/bart-large-cnn is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:27:50,662 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load QA model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like distilbert-base-cased-distilled-squad is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:27:50,869 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:27:50,869 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-26 18:27:50,869 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-26 18:27:50,870 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-26 18:27:50,989 - ai_modules.vision_cuda.cuda_vision_processor - ERROR - ❌ Failed to load EfficientNet: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-07-26 18:27:52,353 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-26 18:27:53,495 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-26 18:27:53,519 - ai_modules.vision_cuda.cuda_vision_processor - WARNING - ⚠️  Failed to load YOLO:   Download failure for https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt. Environment is not online.
+2025-07-26 18:27:53,519 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:27:53,522 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:27:53,523 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:27:54,147 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:27:58,244 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001720B0F8FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 18:27:58,244 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:27:58,245 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:27:58,245 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 18:27:58,245 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:27:58,245 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:27:58,245 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:27:58,246 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:27:58,246 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:28:02,348 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2025-07-26 18:28:02,348 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 18:28:02,351 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 18:28:02,526 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:28:02,537 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:28:08,326 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:28:08,328 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:28:08,328 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:28:08,328 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:28:08,329 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:28:08,329 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:28:08,329 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:28:08,329 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:28:08,522 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:28:08,523 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:28:08,523 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized on cuda:0
+2025-07-26 18:28:08,523 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-26 18:28:08,530 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load embeddings model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like sentence-transformers/all-MiniLM-L6-v2 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:28:08,530 - ai_modules.cuda_text.cuda_text_processor - ERROR - ❌ Failed to create fallback model: 'CudaTextProcessor' object has no attribute '_create_simple_embedding_model'
+2025-07-26 18:28:08,534 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load sentiment model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like cardiffnlp/twitter-roberta-base-sentiment-latest is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:28:08,537 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load summarization model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like facebook/bart-large-cnn is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:28:08,541 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Failed to load QA model: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like distilbert-base-cased-distilled-squad is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-26 18:28:08,717 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:28:08,718 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-26 18:28:08,718 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-26 18:28:08,718 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-26 18:28:08,767 - ai_modules.vision_cuda.cuda_vision_processor - ERROR - ❌ Failed to load EfficientNet: <urlopen error [Errno 11001] getaddrinfo failed>
+2025-07-26 18:28:09,619 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-26 18:28:10,335 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-26 18:28:10,347 - ai_modules.vision_cuda.cuda_vision_processor - WARNING - ⚠️  Failed to load YOLO:   Download failure for https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt. Environment is not online.
+2025-07-26 18:28:10,347 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:28:10,348 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:28:10,349 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:28:10,917 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:28:15,017 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC31D1000>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-26 18:28:15,017 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:28:15,018 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:28:15,018 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma:2b
+2025-07-26 18:28:15,018 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:28:15,018 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:28:15,018 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:28:15,019 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:28:15,019 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:28:19,135 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 18:28:19,140 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 18:30:24,273 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET / HTTP/1.1" 200 -
+2025-07-26 18:30:24,289 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 18:30:24,290 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,292 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,294 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,577 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,578 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,580 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,582 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,590 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 18:30:24,602 - ai_modules.gemma_integration.gemma3n_engine - INFO - ✅ CUDA acceleration enabled for Gemma3n engine
+2025-07-26 18:30:24,602 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 18:30:24,808 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 18:30:28,680 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:28] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 18:30:32,740 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:30:32] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 18:31:47,692 - ai_modules.config - INFO - Gemma3n toggled from True to False
+2025-07-26 18:31:47,692 - ai_modules.gemma_integration.reasoning_layer - INFO - Gemma3n toggled from True to False
+2025-07-26 18:31:47,693 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:31:47] "POST /api/gemma-toggle HTTP/1.1" 200 -
+2025-07-26 18:31:47,694 - ai_modules.config - INFO - Gemma3n toggled from False to False
+2025-07-26 18:31:47,694 - ai_modules.gemma_integration.reasoning_layer - INFO - Gemma3n toggled from False to False
+2025-07-26 18:31:47,695 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:31:47] "POST /api/gemma-toggle HTTP/1.1" 200 -
+2025-07-26 18:31:48,308 - ai_modules.config - INFO - Gemma3n toggled from False to True
+2025-07-26 18:31:48,308 - ai_modules.gemma_integration.reasoning_layer - INFO - Gemma3n toggled from False to True
+2025-07-26 18:31:48,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:31:48] "POST /api/gemma-toggle HTTP/1.1" 200 -
+2025-07-26 18:31:48,309 - ai_modules.config - INFO - Gemma3n toggled from True to True
+2025-07-26 18:31:48,309 - ai_modules.gemma_integration.reasoning_layer - INFO - Gemma3n toggled from True to True
+2025-07-26 18:31:48,311 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:31:48] "POST /api/gemma-toggle HTTP/1.1" 200 -
+2025-07-26 18:34:50,204 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:34:50,222 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:34:58,429 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:34:58,431 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:34:58,431 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:34:58,431 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:34:58,432 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:34:58,432 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:34:58,432 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:34:58,434 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:34:58,718 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:34:58,719 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:34:58,719 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized on cuda:0
+2025-07-26 18:34:58,719 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-26 18:35:04,241 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-26 18:35:19,051 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Custom CUDA embeddings model loaded
+2025-07-26 18:35:21,577 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-26 18:36:41,421 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Sentiment analysis pipeline loaded
+2025-07-26 18:36:42,850 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-26 18:43:04,184 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:43:04,197 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:43:10,238 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:43:10,240 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:43:10,240 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:43:10,241 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:43:10,241 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:43:10,242 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:43:10,242 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:43:10,242 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:43:10,511 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:43:10,511 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:43:10,511 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized on cuda:0
+2025-07-26 18:43:10,511 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-26 18:43:12,397 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Custom CUDA embeddings model loaded
+2025-07-26 18:43:13,308 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Sentiment analysis pipeline loaded
+2025-07-26 18:43:13,908 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-26 18:50:19,289 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:50:19,300 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:50:20,413 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:50:20,415 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:20,415 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:50:20,416 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:50:20,416 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:50:20,416 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:50:20,416 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:50:20,416 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:50:25,327 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:25,328 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:50:25,328 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-26 18:50:27,416 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Ollama connection verified, gemma3n:latest available
+2025-07-26 18:50:27,416 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:27,417 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-26 18:50:27,417 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-26 18:50:27,417 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-26 18:50:31,191 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-26 18:50:34,383 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-26 18:50:37,599 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-26 18:50:40,020 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-26 18:50:40,021 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:50:40,022 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:50:40,023 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:50:40,471 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:50:42,517 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-26 18:50:42,517 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:50:42,517 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:50:42,517 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-26 18:50:42,517 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:50:42,518 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:50:42,518 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:50:42,518 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:50:42,518 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:50:46,688 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-26 18:50:46,688 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-26 18:50:46,689 - werkzeug - INFO -  * Restarting with stat
+2025-07-26 18:50:46,871 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-26 18:50:46,883 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-26 18:50:47,948 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-26 18:50:47,949 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:47,949 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-26 18:50:47,949 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-26 18:50:47,950 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-26 18:50:47,950 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-26 18:50:47,950 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-26 18:50:47,950 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-26 18:50:52,750 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:52,751 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-26 18:50:52,751 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-26 18:50:54,835 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Ollama connection verified, gemma3n:latest available
+2025-07-26 18:50:54,836 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-26 18:50:54,836 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-26 18:50:54,836 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-26 18:50:54,837 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-26 18:50:55,029 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-26 18:50:57,786 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-26 18:51:00,218 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-26 18:51:00,257 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-26 18:51:00,257 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-26 18:51:00,259 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-26 18:51:00,260 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-26 18:51:00,732 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-26 18:51:02,778 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-26 18:51:02,778 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-26 18:51:02,778 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-26 18:51:02,778 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-26 18:51:02,778 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-26 18:51:02,778 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-26 18:51:02,779 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-26 18:51:02,779 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-26 18:51:02,779 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-26 18:51:06,920 - werkzeug - WARNING -  * Debugger is active!
+2025-07-26 18:51:06,924 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-26 18:51:07,832 - werkzeug - INFO - 192.168.1.2 - - [26/Jul/2025 18:51:07] "GET / HTTP/1.1" 200 -
+2025-07-26 18:51:07,833 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:07] "GET / HTTP/1.1" 200 -
+2025-07-26 18:51:07,864 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-26 18:51:08,180 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/request_queue.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,182 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/advanced_memory.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,184 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,412 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/feature_voice.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,506 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/voice_settings.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,508 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/feature_ui.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,510 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/voice_visualizer.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,514 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "GET /static/js/enhanced_vision.js HTTP/1.1" 200 -
+2025-07-26 18:51:08,833 - ai_modules.gemma_integration.gemma3n_engine - INFO - ✅ CUDA acceleration enabled for Gemma3n engine
+2025-07-26 18:51:08,834 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-26 18:51:08,846 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-26 18:51:10,889 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:10] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-26 18:51:12,908 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:51:12] "GET /api/status HTTP/1.1" 200 -
+2025-07-26 18:52:38,101 - gemma - ERROR - Error analyzing image: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:52:38,185 - ai_modules.gemma_integration.prompt_builder - INFO - Built prompt for template: vision_description
+2025-07-26 18:52:38,285 - ai_modules.cuda_core.cuda_manager - ERROR - ❌ sentiment_analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:52:38,287 - ai_modules.gemma_integration.gemma3n_engine - ERROR - ❌ CUDA prompt analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:52:38,288 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 1/2)
+2025-07-26 18:52:38,388 - gemma - ERROR - Error analyzing image: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:52:38,390 - ai_modules.gemma_integration.prompt_builder - INFO - Built prompt for template: vision_description
+2025-07-26 18:52:38,391 - ai_modules.cuda_core.cuda_manager - ERROR - ❌ sentiment_analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:52:38,392 - ai_modules.gemma_integration.gemma3n_engine - ERROR - ❌ CUDA prompt analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:52:38,392 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 1/2)
+2025-07-26 18:53:40,390 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 1 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:53:40,466 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 1 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:53:41,407 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 2/2)
+2025-07-26 18:53:41,468 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 2/2)
+2025-07-26 18:54:43,481 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 2 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:54:43,482 - ai_modules.gemma_integration.gemma3n_engine - INFO - Using fallback response mechanism
+2025-07-26 18:54:43,483 - ai_modules.gemma_integration.reasoning_layer - INFO - Interaction logged - Type: vision, Source: gemma3n, Time: 125.30s
+2025-07-26 18:54:43,495 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:54:43] "POST /api/enhanced-vision HTTP/1.1" 200 -
+2025-07-26 18:54:43,527 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 2 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:54:43,529 - ai_modules.gemma_integration.gemma3n_engine - INFO - Using fallback response mechanism
+2025-07-26 18:54:43,529 - ai_modules.gemma_integration.reasoning_layer - INFO - Interaction logged - Type: vision, Source: gemma3n, Time: 125.14s
+2025-07-26 18:54:43,531 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:54:43] "POST /api/enhanced-vision HTTP/1.1" 200 -
+2025-07-26 18:56:47,857 - gemma - ERROR - Error analyzing image: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:56:47,859 - ai_modules.gemma_integration.prompt_builder - INFO - Built prompt for template: vision_description
+2025-07-26 18:56:47,861 - ai_modules.cuda_core.cuda_manager - ERROR - ❌ sentiment_analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:56:47,861 - ai_modules.gemma_integration.gemma3n_engine - ERROR - ❌ CUDA prompt analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:56:47,874 - gemma - ERROR - Error analyzing image: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:56:47,875 - ai_modules.gemma_integration.prompt_builder - INFO - Built prompt for template: vision_description
+2025-07-26 18:56:47,886 - ai_modules.cuda_core.cuda_manager - ERROR - ❌ sentiment_analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:56:47,887 - ai_modules.gemma_integration.gemma3n_engine - ERROR - ❌ CUDA prompt analysis failed: 'CudaTextProcessor' object has no attribute 'pipelines'
+2025-07-26 18:56:49,964 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 1/2)
+2025-07-26 18:56:49,966 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 1/2)
+2025-07-26 18:57:52,034 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 1 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:57:52,050 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 1 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:57:53,045 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 2/2)
+2025-07-26 18:57:53,061 - ai_modules.gemma_integration.gemma3n_engine - INFO - Attempting Gemma3n generation (attempt 2/2)
+2025-07-26 18:58:55,128 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 2 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:58:55,129 - ai_modules.gemma_integration.gemma3n_engine - INFO - Using fallback response mechanism
+2025-07-26 18:58:55,130 - ai_modules.gemma_integration.reasoning_layer - INFO - Interaction logged - Type: vision, Source: gemma3n, Time: 127.27s
+2025-07-26 18:58:55,132 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:58:55] "POST /api/enhanced-vision HTTP/1.1" 200 -
+2025-07-26 18:58:55,143 - ai_modules.gemma_integration.gemma3n_engine - WARNING - Request timed out on attempt 2 (timeout: 60s): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 18:58:55,147 - ai_modules.gemma_integration.gemma3n_engine - INFO - Using fallback response mechanism
+2025-07-26 18:58:55,147 - ai_modules.gemma_integration.reasoning_layer - INFO - Interaction logged - Type: vision, Source: gemma3n, Time: 127.27s
+2025-07-26 18:58:55,159 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 18:58:55] "POST /api/enhanced-vision HTTP/1.1" 200 -
+2025-07-26 19:00:06,761 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 19:00:06,762 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-26 19:00:06,768 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2025 19:00:06] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:11:33,005 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:11:33,046 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-27 12:15:40,482 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:15:40,494 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-27 12:15:47,263 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers library not available. Some features will be limited.
+2025-07-27 12:15:47,265 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-27 12:15:47,825 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-27 12:15:47,834 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:15:47,834 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-27 12:15:47,834 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-27 12:15:47,835 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-27 12:15:47,835 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-27 12:15:47,836 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-27 12:15:47,844 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:15:47,844 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-27 12:15:47,844 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-27 12:15:51,857 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Could not verify Ollama connection: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024CFFD9D960>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:15:51,857 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-27 12:15:51,858 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers not available - using fallback implementations
+2025-07-27 12:15:51,858 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:15:51,858 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-27 12:15:51,858 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-27 12:15:51,859 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-27 12:15:52,300 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-27 12:15:56,163 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-27 12:15:59,248 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-27 12:15:59,358 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-27 12:15:59,360 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-27 12:15:59,363 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-27 12:15:59,364 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-27 12:16:00,177 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-27 12:16:04,184 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D07B5EF20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:16:04,184 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-27 12:16:04,185 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-27 12:16:04,185 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-27 12:16:04,185 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-27 12:16:04,185 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-27 12:16:04,185 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-27 12:16:04,185 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-27 12:16:04,187 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-27 12:16:08,221 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-27 12:16:08,221 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 12:16:08,223 - werkzeug - INFO -  * Restarting with stat
+2025-07-27 12:16:08,431 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:16:08,443 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-27 12:16:15,055 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers library not available. Some features will be limited.
+2025-07-27 12:16:15,056 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-27 12:16:15,319 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-27 12:16:15,321 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:16:15,321 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-27 12:16:15,321 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-27 12:16:15,321 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-27 12:16:15,322 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-27 12:16:15,322 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-27 12:16:15,328 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:16:15,328 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-27 12:16:15,328 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-27 12:16:19,342 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Could not verify Ollama connection: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219BD84D960>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:16:19,342 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-27 12:16:19,342 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers not available - using fallback implementations
+2025-07-27 12:16:19,343 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:16:19,343 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-27 12:16:19,344 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-27 12:16:19,344 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-27 12:16:19,675 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-27 12:16:23,564 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-27 12:16:26,583 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-27 12:16:26,659 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-27 12:16:26,661 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-27 12:16:26,663 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-27 12:16:26,664 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-27 12:16:27,398 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-27 12:16:31,406 - __main__ - WARNING - ⚠️ Ollama: Connection error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021A09FAEF20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:16:31,406 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-27 12:16:31,406 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-27 12:16:31,407 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-27 12:16:31,407 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-27 12:16:31,407 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-27 12:16:31,408 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-27 12:16:31,408 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-27 12:16:31,408 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-27 12:16:35,427 - werkzeug - WARNING -  * Debugger is active!
+2025-07-27 12:16:35,432 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-27 12:20:54,046 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,066 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,243 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,366 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,369 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,479 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,680 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,681 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,690 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:54,690 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:54] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-27 12:20:55,004 - ai_modules.gemma_integration.gemma3n_engine - INFO - ✅ CUDA acceleration with text processing enabled for Gemma3n engine
+2025-07-27 12:20:55,004 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-27 12:20:55,016 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-27 12:20:59,010 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:59] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-27 12:20:59,249 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-27 12:20:59,552 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:20:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-27 12:21:03,032 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:21:03] "GET /api/status HTTP/1.1" 200 -
+2025-07-27 12:21:21,775 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219C8DEA7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:21:21,775 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219C8DEA7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-27 12:21:21,776 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:21:21] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:23:59,274 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:23:59,286 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-27 12:24:07,672 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers library not available. Some features will be limited.
+2025-07-27 12:24:07,673 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-27 12:24:08,087 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-27 12:24:08,090 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-27 12:24:08,099 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:08,099 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-27 12:24:08,100 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-27 12:24:10,120 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Ollama connection verified, gemma3n:latest available
+2025-07-27 12:24:10,120 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-27 12:24:10,120 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers not available - using fallback implementations
+2025-07-27 12:24:10,120 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:10,120 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-27 12:24:10,121 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-27 12:24:10,121 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-27 12:24:10,342 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-27 12:24:13,454 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-27 12:24:15,513 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-27 12:24:15,547 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-27 12:24:15,547 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-27 12:24:15,548 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-27 12:24:15,549 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-27 12:24:15,953 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-27 12:24:17,968 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-27 12:24:17,969 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-27 12:24:17,969 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-27 12:24:17,969 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-27 12:24:17,969 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-27 12:24:17,969 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-27 12:24:17,969 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-27 12:24:17,969 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-27 12:24:17,970 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-27 12:24:22,004 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-07-27 12:24:22,004 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 12:24:22,005 - werkzeug - INFO -  * Restarting with stat
+2025-07-27 12:24:22,199 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:24:22,210 - __main__ - INFO - ✅ VediX offline assistant loaded successfully
+2025-07-27 12:24:28,553 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers library not available. Some features will be limited.
+2025-07-27 12:24:28,554 - __main__ - INFO - ✅ Enhanced Gemma3n reasoning layer loaded successfully
+2025-07-27 12:24:28,795 - ai_modules.cuda_core.cuda_manager - INFO - 🚀 Found 1 CUDA device(s)
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO -    📱 Device 0: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO -       Memory: 6.0 GB
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO -       Compute: (7, 5)
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO - ✅ Mixed precision (FP16) support enabled
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO - ⚡ CUDA optimizations applied
+2025-07-27 12:24:28,797 - ai_modules.cuda_core.cuda_manager - INFO - ✅ CUDA Manager initialized on cuda:0
+2025-07-27 12:24:28,804 - __main__ - INFO - 🚀 CUDA Support Enabled - GPU: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:28,804 - __main__ - INFO -    📊 Features: Text Processing, Vision, Reasoning
+2025-07-27 12:24:28,804 - ai_modules.cuda_text.cuda_text_processor - INFO - CudaTextProcessor initialized with gemma3n:latest on cuda:0
+2025-07-27 12:24:30,824 - ai_modules.cuda_text.cuda_text_processor - INFO - ✅ Ollama connection verified, gemma3n:latest available
+2025-07-27 12:24:30,824 - ai_modules.cuda_text.cuda_text_processor - INFO - 🔄 Loading text processing models...
+2025-07-27 12:24:30,824 - ai_modules.cuda_text.cuda_text_processor - WARNING - ⚠️  Transformers not available - using fallback implementations
+2025-07-27 12:24:30,824 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🚀 CUDA detected: NVIDIA GeForce GTX 1660 SUPER
+2025-07-27 12:24:30,824 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔋 CUDA memory: 6.4 GB
+2025-07-27 12:24:30,824 - ai_modules.vision_cuda.cuda_vision_processor - INFO - CudaVisionProcessor initialized on cuda
+2025-07-27 12:24:30,824 - ai_modules.vision_cuda.cuda_vision_processor - INFO - 🔄 Loading vision models...
+2025-07-27 12:24:31,136 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ EfficientNet loaded
+2025-07-27 12:24:34,547 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ BLIP image captioning loaded
+2025-07-27 12:24:37,262 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ CLIP model loaded
+2025-07-27 12:24:37,336 - ai_modules.vision_cuda.cuda_vision_processor - INFO - ✅ YOLOv8 object detection loaded
+2025-07-27 12:24:37,337 - __main__ - INFO - ✅ Voice processing (Vosk) loaded successfully
+2025-07-27 12:24:37,339 - __main__ - INFO - ✅ User profile management loaded successfully
+2025-07-27 12:24:37,340 - __main__ - INFO - ✅ AI Response Formatter loaded successfully
+2025-07-27 12:24:38,072 - __main__ - INFO - 🔧 Initializing comprehensive AI system...
+2025-07-27 12:24:40,102 - __main__ - INFO - ✅ Ollama: Connection successful
+2025-07-27 12:24:40,102 - __main__ - INFO - ✅ Vosk speech model found
+2025-07-27 12:24:40,103 - ai_modules.config - INFO - AI Modules Config initialized - Gemma enabled: True
+2025-07-27 12:24:40,103 - __main__ - INFO - 🔮 Enhanced Vision Assistant initialized with gemma3n:latest
+2025-07-27 12:24:40,103 - __main__ - INFO - 📊 Gemma3n status: Enabled
+2025-07-27 12:24:40,103 - __main__ - INFO - ✅ VediX offline assistant initialized
+2025-07-27 12:24:40,103 - __main__ - INFO - 📁 Directory ensured: uploads
+2025-07-27 12:24:40,104 - __main__ - INFO - 📁 Directory ensured: logs
+2025-07-27 12:24:40,104 - __main__ - INFO - 📁 Directory ensured: static/uploads
+2025-07-27 12:24:44,130 - werkzeug - WARNING -  * Debugger is active!
+2025-07-27 12:24:44,134 - werkzeug - INFO -  * Debugger PIN: 445-866-213
+2025-07-27 12:24:44,731 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:24:44,737 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:24:44,740 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:24:44,741 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:24:44,745 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:24:44,798 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-27 12:24:44,800 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "GET / HTTP/1.1" 200 -
+2025-07-27 12:24:44,806 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:44] "GET / HTTP/1.1" 200 -
+2025-07-27 12:24:46,786 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:46] "GET / HTTP/1.1" 200 -
+2025-07-27 12:24:47,113 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,120 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/advanced_memory.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,121 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/request_queue.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,363 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,421 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/feature_voice.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,429 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/voice_settings.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,671 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/feature_ui.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,673 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/voice_visualizer.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:47,729 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:47] "[36mGET /static/js/enhanced_vision.js HTTP/1.1[0m" 304 -
+2025-07-27 12:24:48,039 - ai_modules.gemma_integration.gemma3n_engine - INFO - ✅ CUDA acceleration with text processing enabled for Gemma3n engine
+2025-07-27 12:24:48,039 - ai_modules.gemma_integration.reasoning_layer - INFO - GemmaReasoningLayer initialized - Gemma enabled: True
+2025-07-27 12:24:48,460 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-27 12:24:50,046 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:50] "GET /api/gemma-status HTTP/1.1" 200 -
+2025-07-27 12:24:51,762 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:51] "GET /api/status HTTP/1.1" 200 -
+2025-07-27 12:24:55,413 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-27 12:24:55,425 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:24:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-27 12:25:59,308 - gemma - ERROR - Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-27 12:25:59,314 - __main__ - INFO - AI response: Error in chat: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-27 12:25:59,330 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2025 12:25:59] "POST /api/chat HTTP/1.1" 200 -
+2025-07-27 12:47:45,148 - __main__ - INFO - ✅ Gemma AI integration loaded successfully
+2025-07-27 12:47:45,163 - __main__ - INFO - ✅ VediX offline assistant loaded successfully

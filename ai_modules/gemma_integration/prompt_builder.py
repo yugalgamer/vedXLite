@@ -39,6 +39,11 @@ class GemmaPromptBuilder:
                 'system': "You are a helpful AI assistant for a blind person. Provide supportive, clear, and practical guidance.",
                 'context_prefix': "Context: ",
                 'question_prefix': "Question: "
+            },
+            'greeting_response': {
+                'system': "You are a friendly AI assistant. When responding to greetings, be warm but concise. Avoid repetitive overly enthusiastic responses with excessive emojis. Keep it natural and varied. Respond in 1-2 sentences maximum.",
+                'context_prefix': "User greeting: ",
+                'question_prefix': "Generate a brief, friendly response: "
             }
         }
     

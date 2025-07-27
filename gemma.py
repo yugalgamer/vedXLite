@@ -4,17 +4,35 @@ import base64
 import io
 from PIL import Image
 import logging
+import sys
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Configure logging with UTF-8 support
+if not logging.getLogger().handlers:
+    # Only configure if not already configured
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    
+    file_handler = logging.FileHandler('gemma.log', encoding='utf-8')
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    
+    logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
+
 logger = logging.getLogger(__name__)
 
 class GemmaVisionAssistant:
-    def __init__(self, model_name="gemma3n:latest", ollama_url="http://localhost:11434"):
+    def __init__(self, model_name="gemma3n:latest", ollama_url="http://localhost:11434", 
+                 request_timeout=135, connection_timeout=15):
         self.model_name = model_name
         self.ollama_url = ollama_url
         self.api_endpoint = f"{ollama_url}/api/generate"
         self.chat_endpoint = f"{ollama_url}/api/chat"
+        
+        # Timeout configurations (120-150 seconds range)
+        self.request_timeout = request_timeout  # Main request timeout
+        self.connection_timeout = connection_timeout  # Connection establishment timeout
+        self.health_check_timeout = 10  # Quick health checks
         
         # Vedx Lite system prompt for introverts and shy people with Markdown formatting
         self.vedx_lite_prompt = """
@@ -89,12 +107,12 @@ I will respond with empathy, patience, and understanding. I will never judge, ru
                 }
             }
             
-            # Make request to Ollama
+            # Make request to Ollama with extended timeout for image analysis
             response = requests.post(
                 self.api_endpoint,
                 json=payload,
                 headers={'Content-Type': 'application/json'},
-                timeout=60
+                timeout=(self.connection_timeout, self.request_timeout)
             )
             
             if response.status_code == 200:
@@ -133,7 +151,7 @@ I will respond with empathy, patience, and understanding. I will never judge, ru
                 self.chat_endpoint,
                 json=payload,
                 headers={'Content-Type': 'application/json'},
-                timeout=60
+                timeout=(self.connection_timeout, self.request_timeout)
             )
             
             if response.status_code == 200:
