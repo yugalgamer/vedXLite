@@ -91,7 +91,7 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
    ```bash
    ollama pull gemma3n:latest
    # or for improved performance:
-   ollama pull gemma:2b
+   ollama pull gemma3n:e2b
    ```
 4. **CUDA Toolkit** (Optional): Enables GPU acceleration.
 5. **Vosk Model** for offline voice processing.
@@ -190,7 +190,7 @@ GEMMA_TIMEOUT=60
 
 # Performance Options
 USE_LIGHTWEIGHT_MODEL=false
-LIGHTWEIGHT_MODEL_NAME=gemma:2b
+LIGHTWEIGHT_MODEL_NAME=gemma3n:e2b
 MAX_PROMPT_LENGTH=4000
 MAX_RESPONSE_LENGTH=1000
 
@@ -207,8 +207,8 @@ ENABLE_FALLBACK_RESPONSES=true
 
 ### **Model Selection**
 - **High Performance**: `gemma3n:latest` (Requires 8GB+ GPU memory)
-- **Balanced**: `gemma:7b` (Requires 4GB+ GPU memory)
-- **Fast/Lightweight**: `gemma:2b` (Requires 2GB+ GPU memory)
+- **Balanced**: `gemma3n:e4b` (Requires 4GB+ GPU memory)
+- **Fast/Lightweight**: `gemma3n:e2b` (Requires 2GB+ GPU memory)
 
 ---
 
@@ -266,7 +266,7 @@ ENABLE_FALLBACK_RESPONSES=true
 - Enable automatic garbage collection
 
 **Response Speed**
-- Use `gemma:2b` for faster responses
+- Use `gemma3n:e2b` for faster responses
 - Enable CUDA acceleration
 - Reduce context window size
 
