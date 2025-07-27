@@ -240,3 +240,5 @@ Developers can integrate additional endpoints and adjust existing ones to expand
 - **Community Contributions**: Open-source model encourages feature enhancements by global contributors.
 
 This document should be amended as new features are developed or configurations are altered to keep it relevant for users and contributors alike. 
+
+**[Back](README.md)**

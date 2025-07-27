@@ -59,6 +59,9 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
 
 ---
 
+## Technical Writeup
+**[Technical writeup](TECHNICAL_WRITEUP.md)**
+
 ## 🏗️ Architecture & Technology Stack
 
 ### **Backend Components**
