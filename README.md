@@ -108,19 +108,20 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
    pip install -r requirements.txt
    ```
 3. **Vosk Model Setup**
+   *download it if inside model file vosk folder are not excited*
    ```bash
    wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
    unzip vosk-model-small-en-us-0.15.zip -d model/
    ```
-4. **Start Ollama Service**
+5. **Start Ollama Service**
    ```bash
    ollama serve
    ```
-5. **Launch Application**
+6. **Launch Application**
    ```bash
    python main.py
    ```
-6. **User Interface Access**
+7. **User Interface Access**
    - Open browser: `http://localhost:5000`
    - Complete initial setup.
 
