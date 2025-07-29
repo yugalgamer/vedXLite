@@ -97,42 +97,20 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
    
 6. **Vosk Model** for offline voice processing.
 
-### **Installation Steps**
-1. **Clone the Project**
-   ```bash
-   git clone https://github.com/yugalgamer/vedXLite.git
-   cd VedXlite
-   ```
-2. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Vosk Model Setup**
-   *download it if inside model file vosk folder are not excited*
-   ```bash
-   wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
-   unzip vosk-model-small-en-us-0.15.zip -d model/
-   ```
-5. **Start Ollama Service**
-   ```bash
-   ollama serve
-   ```
-6. **Launch Application**
-   ```bash
-   python main.py
-   ```
-7. **User Interface Access**
-   - Open browser: `http://localhost:5000`
-   - Complete initial setup.
+## 🐧 Linux Installation Guide
 
-### **Linux Installation with Virtual Environment**
+### **Prerequisites for Linux**
+1. **Python 3.8+** and pip
+2. **Git** for cloning the repository
+3. **Ollama** - Install from [ollama.ai](https://ollama.ai/)
+4. **wget** and **unzip** utilities (usually pre-installed)
 
-Follow these steps to set up VedXlite on a Linux system using a Python virtual environment:
+### **Linux Installation Steps**
 
-1. **Ensure Python 3.8+ and Virtualenv are Installed**:
+1. **Update System and Install Dependencies**:
    ```bash
    sudo apt update
-   sudo apt install python3 python3-venv
+   sudo apt install python3 python3-pip python3-venv git wget unzip
    ```
 
 2. **Clone the Project**:
@@ -141,37 +119,138 @@ Follow these steps to set up VedXlite on a Linux system using a Python virtual e
    cd vedXlite
    ```
 
-3. **Create and Activate a Virtual Environment**:
+3. **Create and Activate Virtual Environment**:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
 
-4. **Install Dependencies**:
+4. **Install Python Dependencies**:
    ```bash
+   pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
-5. **Setup Vosk Model**:
-   *Download it if not already present in the `model` directory*:
+5. **Install Ollama** (if not already installed):
+   ```bash
+   curl -fsSL https://ollama.ai/install.sh | sh
+   ```
+
+6. **Download and Install Gemma Model**:
+   ```bash
+   ollama pull gemma3n:latest
+   # For better performance on lower-end systems:
+   # ollama pull gemma3n:e2b
+   ```
+
+7. **Setup Vosk Model**:
    ```bash
    wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
    unzip vosk-model-small-en-us-0.15.zip -d model/
    ```
 
-6. **Start the Ollama Service**:
+8. **Start Ollama Service**:
    ```bash
-   ollama serve
+   ollama serve &
    ```
 
-7. **Launch the Application**:
+9. **Launch VedXlite Application**:
    ```bash
    python main.py
    ```
 
-8. **Access the User Interface**:
-   - Open a browser and go to: `http://localhost:5000`
-   - Complete the initial setup.
+10. **Access the Application**:
+    - Open your browser and navigate to: `http://localhost:5000`
+    - Complete the initial setup
+
+### **Linux Troubleshooting**
+- **Permission Issues**: Use `sudo` for system-wide installations
+- **Port Conflicts**: Change port in `main.py` if 5000 is occupied
+- **Virtual Environment**: Always activate with `source venv/bin/activate`
+- **Firewall**: Allow port 5000 and 11434 (Ollama) through firewall
+
+---
+
+## 🪟 Windows Installation Guide
+
+### **Prerequisites for Windows**
+1. **Python 3.8+** - Download from [python.org](https://python.org)
+2. **Git for Windows** - Download from [git-scm.com](https://git-scm.com)
+3. **Ollama** - Download from [ollama.ai](https://ollama.ai/)
+4. **PowerShell** or **Command Prompt**
+
+### **Windows Installation Steps**
+
+1. **Install Python** (if not already installed):
+   - Download Python 3.8+ from [python.org](https://python.org)
+   - ✅ Check "Add Python to PATH" during installation
+   - ✅ Check "Install pip" option
+
+2. **Install Git for Windows**:
+   - Download from [git-scm.com](https://git-scm.com)
+   - Use default installation settings
+
+3. **Install Ollama**:
+   - Download Ollama installer from [ollama.ai](https://ollama.ai/)
+   - Run the installer and follow setup instructions
+
+4. **Open PowerShell or Command Prompt as Administrator**
+
+5. **Clone the Project**:
+   ```powershell
+   git clone https://github.com/yugalgamer/vedXLite.git
+   cd vedXlite
+   ```
+
+6. **Create and Activate Virtual Environment**:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   # Or in Command Prompt:
+   # .\venv\Scripts\activate.bat
+   ```
+
+7. **Install Python Dependencies**:
+   ```powershell
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
+8. **Download and Install Gemma Model**:
+   ```powershell
+   ollama pull gemma3n:latest
+   # For better performance on lower-end systems:
+   # ollama pull gemma3n:e2b
+   ```
+
+9. **Setup Vosk Model**:
+   - Download manually: [Vosk Model](https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip)
+   - Extract to `model/` directory in project folder
+   - Or use PowerShell:
+   ```powershell
+   Invoke-WebRequest -Uri "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip" -OutFile "vosk-model.zip"
+   Expand-Archive -Path "vosk-model.zip" -DestinationPath "model/"
+   ```
+
+10. **Start Ollama Service**:
+    - Ollama should start automatically after installation
+    - Or manually run: `ollama serve`
+
+11. **Launch VedXlite Application**:
+    ```powershell
+    python main.py
+    ```
+
+12. **Access the Application**:
+    - Open your browser and navigate to: `http://localhost:5000`
+    - Complete the initial setup
+
+### **Windows Troubleshooting**
+- **PowerShell Execution Policy**: Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- **Path Issues**: Ensure Python and Git are in system PATH
+- **Virtual Environment**: Use `.\venv\Scripts\Activate.ps1` in PowerShell
+- **Firewall**: Allow Python and Ollama through Windows Firewall
+- **Antivirus**: Add project folder to antivirus exclusions if needed
 
 ---
 
