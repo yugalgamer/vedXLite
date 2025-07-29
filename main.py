@@ -56,6 +56,9 @@ try:
 except ImportError as e:
     logger.error(f"❌ VediX offline assistant not available: {e}")
     VEDIX_AVAILABLE = False
+    # Define a fallback function
+    def get_vedix():
+        return None
 
 # Enhanced Gemma3n integration modules
 try:
@@ -193,91 +196,34 @@ def check_and_pull_model(model_name):
         return False
 
 def initialize_model_choice():
-    """Initialize Ollama model choice and assistant - called after Flask app starts"""
-    global MODEL_CHOICE, GLOBAL_ASSISTANT
-    
+    """Initialize Ollama model choice and assistant to use gemma3n:latest"""
+    global GLOBAL_ASSISTANT
+
     if not GEMMA_AVAILABLE:
         logger.warning("⚠️ Gemma AI not available - skipping model initialization")
         return
-    
+
     try:
-        # Only ask for model choice if not already set
-        if MODEL_CHOICE is None:
-            print("\n🤖 Ollama Gemma3n Model Selection:")
-            print("💻 Choose the model based on your PC specifications:")
-            print("")
-            print("1. gemma3n:e4b - High-End PC Model")
-            print("   • 💪 Requires: 16GB+ RAM, High-end GPU")
-            print("   • 🎆 Best performance and accuracy")
-            print("   • ⚡ Larger model size (~8-10GB)")
-            print("")
-            print("2. gemma3n:e2b - Medium-Spec PC Model")
-            print("   • 💻 Requires: 8GB+ RAM, Mid-range GPU")
-            print("   • ⚙️ Good performance, faster inference")
-            print("   • 📦 Smaller model size (~4-6GB)")
-            print("")
-            
-            while True:
-                try:
-                    choice = input("🤖 Choose your model (1 for e4b, 2 for e2b): ").strip()
-                    if choice in ['1', '2']:
-                        MODEL_CHOICE = choice
-                        break
-                    else:
-                        print("⚠️ Please enter 1 or 2")
-                except KeyboardInterrupt:
-                    print("\n⚠️ Model selection cancelled - using default medium-spec model")
-                    MODEL_CHOICE = '2'
-                    break
-        
-        # Determine the model name based on choice
-        if MODEL_CHOICE == "1":
-            selected_model = "gemma3n:e4b"
-            model_desc = "High-End PC Model (e4b)"
-        else:
-            selected_model = "gemma3n:e2b"
-            model_desc = "Medium-Spec PC Model (e2b)"
-        
+        selected_model = "gemma3n:latest"
         logger.info(f"🎯 Selected model: {selected_model}")
-        print(f"\n🎯 Selected: {model_desc}")
-        
+
         # Check and download model if needed
         if not check_and_pull_model(selected_model):
-            print(f"\n⚠️ Failed to download {selected_model}. Trying fallback...")
-            
-            # Try the other model as fallback
-            fallback_model = "gemma3n:e2b" if MODEL_CHOICE == "1" else "gemma3n:e4b"
-            logger.info(f"🔄 Attempting fallback to {fallback_model}")
-            
-            if check_and_pull_model(fallback_model):
-                selected_model = fallback_model
-                print(f"✅ Using fallback model: {fallback_model}")
-            else:
-                # Final fallback to basic gemma3n
-                selected_model = "gemma3n:latest"
-                logger.warning(f"🔄 Using basic fallback: {selected_model}")
-                print(f"⚠️ Using basic fallback model: {selected_model}")
-        
+            print(f"\n⚠️ Failed to download {selected_model}.")
+            return
+
         # Initialize the assistant with the selected model
         if GLOBAL_ASSISTANT is None:
             logger.info(f"🦙 Initializing Ollama model ({selected_model})...")
             GLOBAL_ASSISTANT = GemmaVisionAssistant(model_name=selected_model)
             logger.info(f"✅ Ollama model {selected_model} loaded successfully")
             print(f"✅ Model {selected_model} is ready!")
-        
+
         logger.info(f"🎯 Active Model: Ollama {selected_model}")
-        
+
     except Exception as e:
         logger.error(f"❌ Model initialization failed: {e}")
-        # Final fallback
-        try:
-            selected_model = "gemma3n:latest"
-            GLOBAL_ASSISTANT = GemmaVisionAssistant(model_name=selected_model)
-            logger.info(f"✅ Emergency fallback: Using {selected_model}")
-            print(f"⚠️ Emergency fallback: Using {selected_model}")
-        except Exception as fallback_error:
-            logger.error(f"❌ Even fallback failed: {fallback_error}")
-            print(f"❌ Model initialization completely failed: {fallback_error}")
+        print(f"❌ Model initialization failed: {e}")
 
 # ===== COMPREHENSIVE SYSTEM INITIALIZATION =====
 def initialize_comprehensive_system():
@@ -1064,6 +1010,16 @@ User's message: {prompt}"""
 
 # Initialize VediX
 vedix = get_vedix()
+if not vedix:
+    # Create a fallback VediX-like object if get_vedix returns None
+    class FallbackVediX:
+        def process_voice_command(self, text):
+            return "VediX is not available. Please check the system requirements."
+        
+        def get_greeting(self):
+            return "Hello! VediX offline assistant is not available at the moment."
+    
+    vedix = FallbackVediX()
 
 @app.route('/api/voice-interact', methods=['POST'])
 def voice_interact():
