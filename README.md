@@ -125,6 +125,54 @@ VedXlite is a comprehensive AI assistant designed for accessibility, emotional i
    - Open browser: `http://localhost:5000`
    - Complete initial setup.
 
+### **Linux Installation with Virtual Environment**
+
+Follow these steps to set up VedXlite on a Linux system using a Python virtual environment:
+
+1. **Ensure Python 3.8+ and Virtualenv are Installed**:
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-venv
+   ```
+
+2. **Clone the Project**:
+   ```bash
+   git clone https://github.com/yugalgamer/vedXLite.git
+   cd vedXlite
+   ```
+
+3. **Create and Activate a Virtual Environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+4. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Setup Vosk Model**:
+   *Download it if not already present in the `model` directory*:
+   ```bash
+   wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+   unzip vosk-model-small-en-us-0.15.zip -d model/
+   ```
+
+6. **Start the Ollama Service**:
+   ```bash
+   ollama serve
+   ```
+
+7. **Launch the Application**:
+   ```bash
+   python main.py
+   ```
+
+8. **Access the User Interface**:
+   - Open a browser and go to: `http://localhost:5000`
+   - Complete the initial setup.
+
 ---
 
 ## 🎯 Usage Guide
