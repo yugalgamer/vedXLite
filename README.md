@@ -1,4 +1,4 @@
-# 🤖 VedXlite - Advanced Multi-Modal AI Assistant
+# 🤖 VedXlite -- Advanced Multi-Modal AI Assistant
 **An accessibility-focused AI assistant with advanced chat, voice, and vision capabilities powered by Gemma3n, CUDA acceleration, and offline processing.**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Flask](https://img.shields.io/badge/Flask-2.3%2B-green) ![CUDA](https://img.shields.io/badge/CUDA-Accelerated-orange) ![Accessibility](https://img.shields.io/badge/Accessibility-First-purple) ![Ollama](https://img.shields.io/badge/Ollama-Powered-red)
